@@ -5,8 +5,8 @@
     --accent-color : #0091AD;
     --border-style : solid 1px var(--secondary-bg-color);
     --border-radius : 0.5rem;
-  }
-  
+}
+
 body{
     margin: 0px;
     background-color: var(--main-bg-color);
@@ -30,9 +30,14 @@ select{
     border: var(--border-style) ;   
 }
 
-input{
+input, select, option{
     background-color: var(--secondary-bg-color);
+    padding: 0.5rem;
     border:none 
+}
+
+input:focus{
+    outline: solid var(--accent-color) 2px;
 }
 
 section{
@@ -60,6 +65,10 @@ td, th{
 .page-footer{
     background-color: var(--secondary-bg-color);
     padding: 1rem;
+}
+
+#validation-text{
+    color: red;
 }
 
 .nav-bar{

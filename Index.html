@@ -91,6 +91,7 @@
                     <label for="name-input">Enter your name</label>
                     <input id="name-input" type="text">
                 </div>
+
                 <div class="input-group">
                     <label for="number-input">Enter your number</label>
                     <input type="text" id="number-input">
@@ -113,10 +114,11 @@
                         <option value="Resealler">Resealler</option>
                     </select>
                 </div>
+                <p id="validation-text"></p>
                 <div class="input-group">
-                    <input class="button" type="submit" value="sumbit">
+                    <input class="button" onclick="validateForm();" type="button" value="submit">
                     <input class="button" type="reset">
-                </div>
+                </div>  
             </form>
             </div>
         </section>
@@ -124,6 +126,6 @@
     <footer class="page-footer">
         Copyright 2021©Z Telecom
     </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
